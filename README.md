@@ -8,7 +8,7 @@ Sou um texto longo com formatação em paragrafo
 3. PYTHON
 
 
-**Exempolo de tecnologias aplicadas ao projeto** 
-*em uma frase de destaque*
+**MEU ESPÍRITO ANIMAL**
+!['TEXTO ALTERNATIVO'](https://th.bing.com/th/id/OIP.9UleHu0kNHV_aoyjBbg15gAAAA?w=165&h=180&c=7&r=0&o=5&pid=1.7)
 
 *YouthSpace*
