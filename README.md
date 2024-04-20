@@ -2,14 +2,10 @@
 
 Sou um texto longo com formatação em paragrafo
 
-## Sou um subtítulo
-
-
-- Elemento lista
-- Elemento lista
-
-1. Primeiro Passo
-2. Segundo Passo
+## TOP 3 DAS LINGUAGENS PREFERIDAS
+1. JS
+2. SQL 
+3. PYTHON
 
 
 **Exempolo de tecnologias aplicadas ao projeto** 
