@@ -1,19 +1,13 @@
 import streamlit as st
-st.title("Meu título")
-st.write("Olá, mundão")
-esolha = st.selectbox('Selecione o turno de interesse', ['Manhã', 'Tarde','Noite'])
-#Textos renderizados
-if esolha:
-    st.write(esolha)
-radio = ("Selecione uma opção", ['Manhã', 'Tarde','Noite'])
-texto = st.text_input('Digite seu nme: ')
-numero = st.number_input('Digite um numero')
-if texto and numero:
-    st.write(texto, numero)
-
-cpf = st.text_input('Digite seu CPF', placeholder='000.000.000-00')
-
-btnCadastrar = st.button('Cadastrar')
-st.write(btnCadastrar)
-
-textoLongo = st.text_area('Digite sua reclamação', placeholder='Leave your message here...')
+from funcoesCrud import *
+import mysql.connector
+st.title("Sistema Dieguinho Alimentos - ME")
+st.markdown('## Cadastro de Produtos')
+nome = st.text_input('Nome do produto', placeholder='Nome do produto com no máximo 50 caracteres')
+imagem = st.text_input('Imagem do produto', placeholder='URL da imagem com até 100 caracteres')
+codigo = st.text_input('Código do produto', placeholder='Código do produto')
+preco = float(st.number_input('Preço do produto: '))
+btnCadastrarProduto = st.button('Cadastrar Produto')
+if btnCadastrarProduto:
+    cadastrar(nome, preco, codigo, imagem)
+    st.write('Produto cadastrado com sucesso!')

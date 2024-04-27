@@ -1,15 +1,16 @@
 import mysql.connector
 
-conexao = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="",
-    database="loja",
-)
+def conectarBd():
+    conexao = mysql.connector.connect(
+        host="localhost",
+        user="root",
+        password="",
+        database="loja",
+    )
 
-cursor = conexao.cursor()
-print("Conexão como o banco de dados feita com sucesso! \n")
-
+    cursor = conexao.cursor()
+    print("Conexão como o banco de dados feita com sucesso! \n")
+    return conexao, cursor
 
 # funcao inserir
 def cadastrar(nome: str, preco: float, id: str, img: str):
@@ -22,6 +23,7 @@ def cadastrar(nome: str, preco: float, id: str, img: str):
     cursor.execute(comando_sql)
     conexao.commit()  # aqui é onde vamos inserir os dados
     print("Produto cadastrado com sucesso!")
+    conexao, cursor = conectarBd()
 
 
 # funcao selecionar
@@ -30,6 +32,7 @@ def selecionarTodosProdutos():
     cursor.execute(comando_sql)
     resultado_consulta = cursor.fetchall()
     return resultado_consulta
+    conexao, cursor = conectarBd()
 
 
 # funcao atualizar
@@ -37,6 +40,7 @@ def atualizarPreco(id: str, novo_valor: float):
     comando_sql = f' UPDATE produtos SET preco = {novo_valor} WHERE id = "{id}"'
     cursor.execute(comando_sql)
     conexao.commit()
+    conexao, cursor = conectarBd()
 
 
 # funcao deletar
@@ -44,4 +48,5 @@ def deletarProduto(id: str):
     comando_sql = f'DELETE FROM produtos WHERE id = "{id}"'
     cursor.execute(comando_sql)
     conexao.commit()
+    conexao, cursor = conectarBd()
 
