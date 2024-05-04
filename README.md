@@ -4,10 +4,11 @@ O projeto foi concluido ao final do módulo de Python, do curso de Desenvolvimen
 Sou um texto longo com formatação em paragrafo
 
 ## Como utilizar o projeto:
-Python 3.12.1
-MySQL 8.0
-MySQL connector 8.3.0
-Streamlit
+- Python 3.12.1
+- MySQL 8.0
+- MySQL connector 8.3.0
+- Streamlit
+- Pandas
 **MEU ESPÍRITO ANIMAL**
 !['TEXTO ALTERNATIVO'](https://th.bing.com/th/id/OIP.9UleHu0kNHV_aoyjBbg15gAAAA?w=165&h=180&c=7&r=0&o=5&pid=1.7)
 
