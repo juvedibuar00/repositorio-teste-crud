@@ -8,7 +8,8 @@ Sou um texto longo com formatação em paragrafo
 - MySQL 8.0
 - MySQL connector 8.3.0
 - Streamlit
-- Pandas 
+- Pandas
+-  
 
 
 
