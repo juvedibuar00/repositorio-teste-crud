@@ -9,7 +9,12 @@ Sou um texto longo com formatação em paragrafo
 - MySQL connector 8.3.0
 - Streamlit
 - Pandas 
-**MEU ESPÍRITO ANIMAL**
+
+
+
+
+
+<!-- **MEU ESPÍRITO ANIMAL**
 !['TEXTO ALTERNATIVO'](https://th.bing.com/th/id/OIP.9UleHu0kNHV_aoyjBbg15gAAAA?w=165&h=180&c=7&r=0&o=5&pid=1.7)
 
-*YouthSpace*..
+*YouthSpace*.. -->
